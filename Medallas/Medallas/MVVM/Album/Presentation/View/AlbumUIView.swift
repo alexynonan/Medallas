@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct AlbumUIView: View {
+    
+    @ObservedObject var viewModel: AlbumViewModel
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(viewModel.getTitle())
     }
-}
-
-#Preview {
-    AlbumUIView()
 }

@@ -29,4 +29,17 @@ final class MedallaViewModel: ObservableObject {
             }
         }
     }
+    
+    func redirectionMedallaDetalle() -> MedallaDetalleViewModel {
+        MedallaDetalleViewModel()
+    }
+    func redirectionMisiones() -> MisionesViewModel {
+        MisionesViewModel()
+    }
+    func redirectionRachas() -> RachasViewModel {
+        RachasViewModel()
+    }
+    func redirectionAlbum() -> AlbumViewModel {
+        AlbumViewModel()
+    }
 }

@@ -26,6 +26,8 @@
 		9566D7232EA13C7F00C4F37F /* MedallasDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7222EA13C7F00C4F37F /* MedallasDataSourceProtocol.swift */; };
 		9566D7262EA13FC200C4F37F /* MedallasDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7252EA13FC200C4F37F /* MedallasDataMapper.swift */; };
 		9566D7282EA13FF900C4F37F /* MedallasDataMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7272EA13FF900C4F37F /* MedallasDataMapperImpl.swift */; };
+		9566D72A2EA1573700C4F37F /* MedallaDetalleUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7292EA1573700C4F37F /* MedallaDetalleUIView.swift */; };
+		9566D72E2EA1577000C4F37F /* MedallaDetalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D72D2EA1577000C4F37F /* MedallaDetalleViewModel.swift */; };
 		959DA6632EA0AB01001DD951 /* MedallaUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6622EA0AB01001DD951 /* MedallaUIView.swift */; };
 		959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */; };
 		959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */; };
@@ -57,6 +59,8 @@
 		9566D7222EA13C7F00C4F37F /* MedallasDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDataSourceProtocol.swift; sourceTree = "<group>"; };
 		9566D7252EA13FC200C4F37F /* MedallasDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDataMapper.swift; sourceTree = "<group>"; };
 		9566D7272EA13FF900C4F37F /* MedallasDataMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDataMapperImpl.swift; sourceTree = "<group>"; };
+		9566D7292EA1573700C4F37F /* MedallaDetalleUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaDetalleUIView.swift; sourceTree = "<group>"; };
+		9566D72D2EA1577000C4F37F /* MedallaDetalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaDetalleViewModel.swift; sourceTree = "<group>"; };
 		959DA6622EA0AB01001DD951 /* MedallaUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaUIView.swift; sourceTree = "<group>"; };
 		959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaViewModel.swift; sourceTree = "<group>"; };
 		959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisionesUIView.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */,
+				9566D72D2EA1577000C4F37F /* MedallaDetalleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				959DA6622EA0AB01001DD951 /* MedallaUIView.swift */,
+				9566D7292EA1573700C4F37F /* MedallaDetalleUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				9566D70D2EA1305F00C4F37F /* MedallasRepository.swift in Sources */,
 				9566D71D2EA1392B00C4F37F /* ApiResult.swift in Sources */,
 				950A0AC02EA09C8000F4785D /* Persistence.swift in Sources */,
+				9566D72E2EA1577000C4F37F /* MedallaDetalleViewModel.swift in Sources */,
 				9566D71B2EA1372100C4F37F /* WebserviceProtocolImpl.swift in Sources */,
 				9566D7282EA13FF900C4F37F /* MedallasDataMapperImpl.swift in Sources */,
 				959DA66C2EA0AC4F001DD951 /* MisionesViewModel.swift in Sources */,
@@ -444,6 +451,7 @@
 				959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */,
 				9566D6F32EA0D21500C4F37F /* FetchMedallasUseCase.swift in Sources */,
 				9566D7192EA1370E00C4F37F /* WebserviceProtocol.swift in Sources */,
+				9566D72A2EA1573700C4F37F /* MedallaDetalleUIView.swift in Sources */,
 				9566D7092EA12F2900C4F37F /* UIMedalla.swift in Sources */,
 				959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */,
 				959DA6782EA0AD98001DD951 /* AlbumUIView.swift in Sources */,

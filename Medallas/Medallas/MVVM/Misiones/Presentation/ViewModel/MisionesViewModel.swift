@@ -5,8 +5,11 @@
 //  Created by Alexander Ynoñan H. on 15/10/25.
 //
 
-import UIKit
+import Combine
 
-class MisionesViewModel: NSObject {
+final class MisionesViewModel: ObservableObject {
 
+    func getTitle() -> String {
+        "Bievenido a tus Misiones"
+    }
 }

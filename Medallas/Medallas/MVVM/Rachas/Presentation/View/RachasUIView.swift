@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct RachasUIView: View {
+    
+    @ObservedObject var viewModel: RachasViewModel
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(viewModel.getTitle())
     }
-}
-
-#Preview {
-    RachasUIView()
 }

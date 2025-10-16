@@ -50,13 +50,13 @@ struct MedallaUIView: View {
     private func destinationView(for medalla: UIMedalla) -> some View {
         switch medalla.typeMedalla {
         case 1:
-            MisionesUIView()
+            MedallaDetalleUIView(viewModel: viewModel.redirectionMedallaDetalle())
         case 2:
-            MisionesUIView()
+            MisionesUIView(viewModel: viewModel.redirectionMisiones())
         case 3:
-            RachasUIView()
+            RachasUIView(viewModel: viewModel.redirectionRachas())
         case 4:
-            AlbumUIView()
+            AlbumUIView(viewModel: viewModel.redirectionAlbum())
         default:
             Text("Detalle no disponible")
         }
