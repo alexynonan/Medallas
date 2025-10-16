@@ -5,8 +5,11 @@
 //  Created by Alexander Ynoñan H. on 15/10/25.
 //
 
-import UIKit
+import Combine
 
-class AlbumViewModel {
-
+class AlbumViewModel: ObservableObject {
+    
+    func getTitle() -> String {
+        "Bievenido a tus Albums"
+    }
 }

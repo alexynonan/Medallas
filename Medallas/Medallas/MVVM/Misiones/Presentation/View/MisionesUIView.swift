@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct MisionesUIView: View {
+    
+    @ObservedObject var viewModel: MisionesViewModel
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(viewModel.getTitle())
     }
-}
-
-#Preview {
-    MisionesUIView()
 }
