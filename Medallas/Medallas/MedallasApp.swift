@@ -14,8 +14,18 @@ struct MedallasApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationView {
+                let networkManager = WebserviceProtocolImpl()
+                let dataSource = MedallasDataSourceImpl(networkManager: networkManager)
+                let mapper = MedallasDataMapperImpl()
+                let repository = MedallasRepositoryImpl(
+                    dataSource: dataSource,
+                    mapper: mapper
+                )
+                let useCase = FetchMedallasUseCaseImpl(repository: repository)
+                let viewModel = MedallaViewModel(fetchMedallasUseCase: useCase)
+                MedallaUIView(viewModel: viewModel)
+            }
         }
     }
 }

@@ -7,6 +7,26 @@
 
 import UIKit
 
-class MedallaViewModel {
-
+final class MedallaViewModel: ObservableObject {
+    
+    let fetchMedallasUseCase: FetchMedallasUseCase
+    
+    @Published var medallas: [UIMedalla] = []
+    
+    init(
+        fetchMedallasUseCase: FetchMedallasUseCase
+    ) {
+        self.fetchMedallasUseCase = fetchMedallasUseCase
+    }
+    
+    func loadMedallas() {
+        fetchMedallasUseCase.fetchMedallas { result in
+            switch result {
+            case .success(data: let users):
+                self.medallas = users
+            case .error:
+                break
+            }
+        }
+    }
 }
