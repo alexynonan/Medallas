@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		950A0ABC2EA09C8000F4785D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950A0AB52EA09C8000F4785D /* Assets.xcassets */; };
+		950A0ABD2EA09C8000F4785D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A0AB62EA09C8000F4785D /* ContentView.swift */; };
+		950A0ABE2EA09C8000F4785D /* Medallas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 950A0AB72EA09C8000F4785D /* Medallas.xcdatamodeld */; };
+		950A0ABF2EA09C8000F4785D /* MedallasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A0AB82EA09C8000F4785D /* MedallasApp.swift */; };
+		950A0AC02EA09C8000F4785D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A0AB92EA09C8000F4785D /* Persistence.swift */; };
+		959DA6632EA0AB01001DD951 /* MedallaUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6622EA0AB01001DD951 /* MedallaUIView.swift */; };
+		959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */; };
+		959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */; };
+		959DA66C2EA0AC4F001DD951 /* MisionesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA66B2EA0AC4F001DD951 /* MisionesViewModel.swift */; };
+		959DA6712EA0ACE2001DD951 /* RachasUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6702EA0ACE2001DD951 /* RachasUIView.swift */; };
+		959DA6732EA0ACEF001DD951 /* RachasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6722EA0ACEF001DD951 /* RachasViewModel.swift */; };
+		959DA6782EA0AD98001DD951 /* AlbumUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6772EA0AD98001DD951 /* AlbumUIView.swift */; };
+		959DA67A2EA0ADA6001DD951 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6792EA0ADA6001DD951 /* AlbumViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		950A0AA22EA09C6C00F4785D /* Medallas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medallas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		950A0AB52EA09C8000F4785D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		950A0AB62EA09C8000F4785D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		950A0AB82EA09C8000F4785D /* MedallasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasApp.swift; sourceTree = "<group>"; };
+		950A0AB92EA09C8000F4785D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		950A0ABB2EA09C8000F4785D /* Medallas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Medallas.xcdatamodel; sourceTree = "<group>"; };
+		959DA6622EA0AB01001DD951 /* MedallaUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaUIView.swift; sourceTree = "<group>"; };
+		959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaViewModel.swift; sourceTree = "<group>"; };
+		959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisionesUIView.swift; sourceTree = "<group>"; };
+		959DA66B2EA0AC4F001DD951 /* MisionesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisionesViewModel.swift; sourceTree = "<group>"; };
+		959DA6702EA0ACE2001DD951 /* RachasUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachasUIView.swift; sourceTree = "<group>"; };
+		959DA6722EA0ACEF001DD951 /* RachasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachasViewModel.swift; sourceTree = "<group>"; };
+		959DA6772EA0AD98001DD951 /* AlbumUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumUIView.swift; sourceTree = "<group>"; };
+		959DA6792EA0ADA6001DD951 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		950A0A9F2EA09C6C00F4785D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		950A0A992EA09C6C00F4785D = {
+			isa = PBXGroup;
+			children = (
+				950A0ABA2EA09C8000F4785D /* Medallas */,
+				950A0AA32EA09C6C00F4785D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		950A0AA32EA09C6C00F4785D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				950A0AA22EA09C6C00F4785D /* Medallas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		950A0ABA2EA09C8000F4785D /* Medallas */ = {
+			isa = PBXGroup;
+			children = (
+				950A0AB52EA09C8000F4785D /* Assets.xcassets */,
+				950A0AB62EA09C8000F4785D /* ContentView.swift */,
+				950A0AB72EA09C8000F4785D /* Medallas.xcdatamodeld */,
+				950A0AB82EA09C8000F4785D /* MedallasApp.swift */,
+				950A0AB92EA09C8000F4785D /* Persistence.swift */,
+				959DA6572EA0A6AB001DD951 /* MVVM */,
+			);
+			path = Medallas;
+			sourceTree = "<group>";
+		};
+		959DA6572EA0A6AB001DD951 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6582EA0A6D6001DD951 /* Medallas */,
+				959DA6592EA0A6EC001DD951 /* Misiones */,
+				959DA65A2EA0A6F4001DD951 /* Rachas */,
+				959DA65B2EA0A6FA001DD951 /* Album */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		959DA6582EA0A6D6001DD951 /* Medallas */ = {
+			isa = PBXGroup;
+			children = (
+				959DA65D2EA0AA9D001DD951 /* Data */,
+				959DA65E2EA0AAA6001DD951 /* Domain */,
+				959DA65C2EA0A7D5001DD951 /* Presentation */,
+			);
+			path = Medallas;
+			sourceTree = "<group>";
+		};
+		959DA6592EA0A6EC001DD951 /* Misiones */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6662EA0ABE1001DD951 /* Presentation */,
+			);
+			path = Misiones;
+			sourceTree = "<group>";
+		};
+		959DA65A2EA0A6F4001DD951 /* Rachas */ = {
+			isa = PBXGroup;
+			children = (
+				959DA66D2EA0ACC0001DD951 /* Presentation */,
+			);
+			path = Rachas;
+			sourceTree = "<group>";
+		};
+		959DA65B2EA0A6FA001DD951 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6742EA0AD7D001DD951 /* Presentation */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		959DA65C2EA0A7D5001DD951 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				959DA65F2EA0AAC7001DD951 /* ViewModel */,
+				959DA6602EA0AAD5001DD951 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		959DA65D2EA0AA9D001DD951 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		959DA65E2EA0AAA6001DD951 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				959DA67B2EA0AE51001DD951 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		959DA65F2EA0AAC7001DD951 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		959DA6602EA0AAD5001DD951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6622EA0AB01001DD951 /* MedallaUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		959DA6662EA0ABE1001DD951 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6672EA0ABE7001DD951 /* ViewModel */,
+				959DA6682EA0ABEE001DD951 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		959DA6672EA0ABE7001DD951 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				959DA66B2EA0AC4F001DD951 /* MisionesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		959DA6682EA0ABEE001DD951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		959DA66D2EA0ACC0001DD951 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				959DA66F2EA0ACCC001DD951 /* ViewModel */,
+				959DA66E2EA0ACC9001DD951 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		959DA66E2EA0ACC9001DD951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6702EA0ACE2001DD951 /* RachasUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		959DA66F2EA0ACCC001DD951 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6722EA0ACEF001DD951 /* RachasViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		959DA6742EA0AD7D001DD951 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6762EA0AD87001DD951 /* ViewModel */,
+				959DA6752EA0AD83001DD951 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		959DA6752EA0AD83001DD951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6772EA0AD98001DD951 /* AlbumUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		959DA6762EA0AD87001DD951 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				959DA6792EA0ADA6001DD951 /* AlbumViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		959DA67B2EA0AE51001DD951 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		950A0AA12EA09C6C00F4785D /* Medallas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 950A0AB22EA09C6E00F4785D /* Build configuration list for PBXNativeTarget "Medallas" */;
+			buildPhases = (
+				950A0A9E2EA09C6C00F4785D /* Sources */,
+				950A0A9F2EA09C6C00F4785D /* Frameworks */,
+				950A0AA02EA09C6C00F4785D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medallas;
+			packageProductDependencies = (
+			);
+			productName = Medallas;
+			productReference = 950A0AA22EA09C6C00F4785D /* Medallas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		950A0A9A2EA09C6C00F4785D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					950A0AA12EA09C6C00F4785D = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 950A0A9D2EA09C6C00F4785D /* Build configuration list for PBXProject "Medallas" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 950A0A992EA09C6C00F4785D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 950A0AA32EA09C6C00F4785D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				950A0AA12EA09C6C00F4785D /* Medallas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		950A0AA02EA09C6C00F4785D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950A0ABC2EA09C8000F4785D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		950A0A9E2EA09C6C00F4785D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959DA67A2EA0ADA6001DD951 /* AlbumViewModel.swift in Sources */,
+				950A0ABD2EA09C8000F4785D /* ContentView.swift in Sources */,
+				959DA6632EA0AB01001DD951 /* MedallaUIView.swift in Sources */,
+				950A0ABE2EA09C8000F4785D /* Medallas.xcdatamodeld in Sources */,
+				950A0ABF2EA09C8000F4785D /* MedallasApp.swift in Sources */,
+				950A0AC02EA09C8000F4785D /* Persistence.swift in Sources */,
+				959DA66C2EA0AC4F001DD951 /* MisionesViewModel.swift in Sources */,
+				959DA6732EA0ACEF001DD951 /* RachasViewModel.swift in Sources */,
+				959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */,
+				959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */,
+				959DA6782EA0AD98001DD951 /* AlbumUIView.swift in Sources */,
+				959DA6712EA0ACE2001DD951 /* RachasUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		950A0AB02EA09C6E00F4785D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 38VT3MSS8Q;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		950A0AB12EA09C6E00F4785D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 38VT3MSS8Q;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		950A0AB32EA09C6E00F4785D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38VT3MSS8Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ynonan.Medallas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		950A0AB42EA09C6E00F4785D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38VT3MSS8Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ynonan.Medallas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		950A0A9D2EA09C6C00F4785D /* Build configuration list for PBXProject "Medallas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950A0AB02EA09C6E00F4785D /* Debug */,
+				950A0AB12EA09C6E00F4785D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		950A0AB22EA09C6E00F4785D /* Build configuration list for PBXNativeTarget "Medallas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950A0AB32EA09C6E00F4785D /* Debug */,
+				950A0AB42EA09C6E00F4785D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		950A0AB72EA09C8000F4785D /* Medallas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				950A0ABB2EA09C8000F4785D /* Medallas.xcdatamodel */,
+			);
+			currentVersion = 950A0ABB2EA09C8000F4785D /* Medallas.xcdatamodel */;
+			path = Medallas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 950A0A9A2EA09C6C00F4785D /* Project object */;
+}
