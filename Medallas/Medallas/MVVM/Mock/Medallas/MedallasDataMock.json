@@ -1,0 +1,22 @@
+[
+  {
+      "name": "Medallas",
+      "icon": "🏅",
+      "type": 1
+  },
+  {
+      "name": "Misiones",
+      "icon": "🎯",
+      "type": 2
+  },
+  {
+      "name": "Rachas",
+      "icon": "🔥",
+      "type": 3
+  },
+  {
+      "name": "Álbum",
+      "icon": "📸",
+      "type": 4
+  }
+]

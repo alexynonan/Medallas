@@ -8,11 +8,57 @@
 import SwiftUI
 
 struct MedallaUIView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+    private enum Constants {
+        static let iconProfile = "ic_profile"
     }
-}
-
-#Preview {
-    MedallaUIView()
+    
+    @ObservedObject var viewModel: MedallaViewModel
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Spacer()
+                Image(Constants.iconProfile)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(
+                        width: 250,
+                        height: 300
+                    )
+                    .clipped()
+                    .padding(.top, 50)
+                    .cornerRadius(25)
+                Spacer()
+            }
+            List($viewModel.medallas, id: \.typeMedalla) { $medalla in
+                NavigationLink(
+                    destination: destinationView(for: medalla)
+                ) {
+                    HStack {
+                        Text(medalla.nameComplet())
+                            .font(.title)
+                    }
+                }
+            }
+            .listStyle(.insetGrouped)
+        }
+        .ignoresSafeArea(edges: .top)
+        .onAppear { viewModel.loadMedallas() }
+    }
+    @ViewBuilder
+    private func destinationView(for medalla: UIMedalla) -> some View {
+        switch medalla.typeMedalla {
+        case 1:
+            MisionesUIView()
+        case 2:
+            MisionesUIView()
+        case 3:
+            RachasUIView()
+        case 4:
+            AlbumUIView()
+        default:
+            Text("Detalle no disponible")
+        }
+    }
 }
