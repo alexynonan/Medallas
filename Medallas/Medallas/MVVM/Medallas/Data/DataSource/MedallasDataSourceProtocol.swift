@@ -7,4 +7,7 @@
 
 protocol MedallasDataSourceProtocol {
     func fetchMedallas() async -> ApiResult<[ApiMedallas]>
+    func saveMedallasLocal(_ medallas: [Medalla])
+    func fetchMedallasLocal() -> [CDMedallas]
+    func deleteAllMedallasLocal()
 }
