@@ -17,7 +17,7 @@ struct PersistenceController {
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
             let newItem = MedallaEntity(context: viewContext)
-            newItem.id = UUID()
+            newItem.id = String()
             newItem.level = 1
             newItem.points = 0
         }

@@ -5,8 +5,6 @@
 //  Created by Alexander Ynoñan H. on 16/10/25.
 //
 
-import UIKit
-
 class MedallasRepositoryImpl: MedallasRepository {
     
     let dataSource: MedallasDataSourceProtocol
@@ -25,10 +23,16 @@ class MedallasRepositoryImpl: MedallasRepository {
         switch result {
         case .success(let data):
             let dataLocal = dataSource.fetchMedallasLocal()
-            let finalLogic = self.mapper.dataToDomain(dataLocal, data)
-            return .success(data: self.mapper.dataToDomain(data))
+            return .success(data: self.mapper.dataToDomain(dataLocal, data))
         case .error(let error):
             return .error(error: error)
         }
+    }
+    func saveMedallas(list: [Medalla]) {
+        deleteMedallas()
+        dataSource.saveMedallasLocal(list)
+    }
+    func deleteMedallas() {
+        dataSource.deleteAllMedallasLocal()
     }
 }

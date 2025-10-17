@@ -10,7 +10,8 @@ import SwiftUI
 struct PerfilUIView: View {
     
     private enum Constants {
-        static let iconProfile = "ic_profile"
+        static let widthAndHeight: CGFloat = 300
+        static let cornerRadius: CGFloat = 150
     }
     
     @ObservedObject var viewModel: PerfilViewModel
@@ -19,14 +20,6 @@ struct PerfilUIView: View {
         VStack {
             Spacer()
                 .frame(height: 60)
-            Image(Constants.iconProfile)
-                .resizable()
-                .frame(
-                    width: 300,
-                    height: 300
-                )
-                .clipped()
-                .cornerRadius(150)
             if viewModel.isLoading {
                 ProgressView("Cargando...")
                     .progressViewStyle(CircularProgressViewStyle())

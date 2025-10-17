@@ -47,6 +47,8 @@
 		9566D76E2EA1DB9700C4F37F /* PerfilFuncionalityDataMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 9566D76D2EA1DB9700C4F37F /* PerfilFuncionalityDataMock.json */; };
 		9566D7702EA2A5B200C4F37F /* ConfettiUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D76F2EA2A5B200C4F37F /* ConfettiUIView.swift */; };
 		9566D7722EA2BDED00C4F37F /* CDMedallas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7712EA2BDED00C4F37F /* CDMedallas.swift */; };
+		9566D7742EA2CCDB00C4F37F /* CDMedallasUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7732EA2CCDB00C4F37F /* CDMedallasUseCase.swift */; };
+		9566D7762EA2CD3A00C4F37F /* CDMedallasUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7752EA2CD3A00C4F37F /* CDMedallasUseCaseImpl.swift */; };
 		959DA6632EA0AB01001DD951 /* MedallaUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6622EA0AB01001DD951 /* MedallaUIView.swift */; };
 		959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */; };
 		959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */; };
@@ -99,6 +101,8 @@
 		9566D76D2EA1DB9700C4F37F /* PerfilFuncionalityDataMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PerfilFuncionalityDataMock.json; sourceTree = "<group>"; };
 		9566D76F2EA2A5B200C4F37F /* ConfettiUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiUIView.swift; sourceTree = "<group>"; };
 		9566D7712EA2BDED00C4F37F /* CDMedallas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMedallas.swift; sourceTree = "<group>"; };
+		9566D7732EA2CCDB00C4F37F /* CDMedallasUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMedallasUseCase.swift; sourceTree = "<group>"; };
+		9566D7752EA2CD3A00C4F37F /* CDMedallasUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMedallasUseCaseImpl.swift; sourceTree = "<group>"; };
 		959DA6622EA0AB01001DD951 /* MedallaUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaUIView.swift; sourceTree = "<group>"; };
 		959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaViewModel.swift; sourceTree = "<group>"; };
 		959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisionesUIView.swift; sourceTree = "<group>"; };
@@ -168,8 +172,8 @@
 		9566D70B2EA1300100C4F37F /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				9566D7202EA13C5D00C4F37F /* MedallasDataSourceImpl.swift */,
 				9566D7222EA13C7F00C4F37F /* MedallasDataSourceProtocol.swift */,
+				9566D7202EA13C5D00C4F37F /* MedallasDataSourceImpl.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -539,6 +543,8 @@
 			children = (
 				9566D6F22EA0D21500C4F37F /* FetchMedallasUseCase.swift */,
 				9566D6F42EA0D29F00C4F37F /* FetchMedallasUseCaseImpl.swift */,
+				9566D7732EA2CCDB00C4F37F /* CDMedallasUseCase.swift */,
+				9566D7752EA2CD3A00C4F37F /* CDMedallasUseCaseImpl.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -632,6 +638,7 @@
 				950A0ABF2EA09C8000F4785D /* MedallasApp.swift in Sources */,
 				9566D70D2EA1305F00C4F37F /* MedallasRepository.swift in Sources */,
 				9566D73C2EA19DEE00C4F37F /* PerfilViewModel.swift in Sources */,
+				9566D7762EA2CD3A00C4F37F /* CDMedallasUseCaseImpl.swift in Sources */,
 				9566D71D2EA1392B00C4F37F /* ApiResult.swift in Sources */,
 				9566D7462EA19F5100C4F37F /* UIPerfilFuncionality.swift in Sources */,
 				950A0AC02EA09C8000F4785D /* Persistence.swift in Sources */,
@@ -656,6 +663,7 @@
 				959DA6782EA0AD98001DD951 /* AlbumUIView.swift in Sources */,
 				9566D7102EA1315200C4F37F /* ApiMedallas.swift in Sources */,
 				9566D7722EA2BDED00C4F37F /* CDMedallas.swift in Sources */,
+				9566D7742EA2CCDB00C4F37F /* CDMedallasUseCase.swift in Sources */,
 				9566D7412EA19EA600C4F37F /* FetchPerfilUseCase.swift in Sources */,
 				9566D7212EA13C5D00C4F37F /* MedallasDataSourceImpl.swift in Sources */,
 				9566D7602EA1A66100C4F37F /* PerfilDataMapper.swift in Sources */,

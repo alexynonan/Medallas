@@ -11,7 +11,6 @@ import CoreData
 @main
 struct MedallasApp: App {
     
-    @Environment(\.scenePhase) private var scenePhase
     let persistenceController = PersistenceController.shared
     
     @StateObject private var perfilViewModel: PerfilViewModel
@@ -29,16 +28,6 @@ struct MedallasApp: App {
             }
             
             .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        }
-        .onChange(of: scenePhase) { newPhase in
-            switch newPhase {
-            case .background:
-                print("⏸️ Entro a segundo plano")
-            case .active:
-                print("▶️ App en primer plano")
-            default:
-                break
-            }
         }
     }
     static func getViewModelProfile(context: NSManagedObjectContext) -> PerfilViewModel {
@@ -71,7 +60,14 @@ struct MedallasApp: App {
                     repository: repository,
                     mapper: mapperDomain
                 )
-                let viewModel = MedallaViewModel(fetchMedallasUseCase: useCase)
+                let useCaseMedallas = CDMedallasUseCaseImpl(
+                    repository: repository,
+                    mapper: mapperDomain
+                )
+                let viewModel = MedallaViewModel(
+                    fetchMedallasUseCase: useCase,
+                    coreDataMedallasUseCase: useCaseMedallas
+                )
                 return viewModel
             },
             misionesFactory: {
