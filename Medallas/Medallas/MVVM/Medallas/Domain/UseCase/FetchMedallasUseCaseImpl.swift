@@ -13,10 +13,7 @@ class FetchMedallasUseCaseImpl: FetchMedallasUseCase {
         self.repository = repository
     }
     
-    func fetchMedallas(
-        completion: @escaping (ApiResult<[UIMedalla]>) -> Void
-    ) {
-        repository.fetchMedallas(completion: completion)
+    func fetchMedallas() async -> ApiResult<[UIMedalla]> {
+        await repository.fetchMedallas()
     }
-    
 }

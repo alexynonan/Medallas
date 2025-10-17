@@ -6,7 +6,5 @@
 //
 
 protocol FetchMedallasUseCase {
-    func fetchMedallas(
-        completion: @escaping (ApiResult<[UIMedalla]>) -> Void
-    )
+    func fetchMedallas() async -> ApiResult<[UIMedalla]>
 }

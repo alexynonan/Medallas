@@ -6,7 +6,5 @@
 //
 
 protocol MedallasDataSourceProtocol {
-    func fetchMedallas(
-        completion: @escaping (ApiResult<[ApiMedallas]?>) -> Void
-    )
+    func fetchMedallas() async -> ApiResult<[ApiMedallas]>
 }

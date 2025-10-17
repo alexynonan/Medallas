@@ -17,48 +17,38 @@ struct MedallaUIView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            Spacer()
+                .frame(height: 60)
+            Image(Constants.iconProfile)
+                .resizable()
+                .frame(
+                    width: 300,
+                    height: 300
+                )
+                .clipped()
+                .cornerRadius(150)
+            if viewModel.isLoading {
+                ProgressView("Cargando...")
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+                    .scaleEffect(1.3)
                 Spacer()
-                Image(Constants.iconProfile)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(
-                        width: 250,
-                        height: 300
-                    )
-                    .clipped()
-                    .padding(.top, 50)
-                    .cornerRadius(25)
-                Spacer()
+            } else {
+//                List($viewModel.medallas, id: \.typeMedalla) { $medalla in
+//                    NavigationLink(
+//                        destination: destinationView(for: medalla)
+//                    ) {
+//                        HStack {
+//                            Text(medalla.nameComplet())
+//                                .font(.title)
+//                        }
+//                    }
+//                }
+//                .listStyle(.insetGrouped)
             }
-            List($viewModel.medallas, id: \.typeMedalla) { $medalla in
-                NavigationLink(
-                    destination: destinationView(for: medalla)
-                ) {
-                    HStack {
-                        Text(medalla.nameComplet())
-                            .font(.title)
-                    }
-                }
-            }
-            .listStyle(.insetGrouped)
         }
         .ignoresSafeArea(edges: .top)
+        .onDisappear { viewModel.cancelTask() }
         .onAppear { viewModel.loadMedallas() }
-    }
-    @ViewBuilder
-    private func destinationView(for medalla: UIMedalla) -> some View {
-        switch medalla.typeMedalla {
-        case 1:
-            MedallaDetalleUIView(viewModel: viewModel.redirectionMedallaDetalle())
-        case 2:
-            MisionesUIView(viewModel: viewModel.redirectionMisiones())
-        case 3:
-            RachasUIView(viewModel: viewModel.redirectionRachas())
-        case 4:
-            AlbumUIView(viewModel: viewModel.redirectionAlbum())
-        default:
-            Text("Detalle no disponible")
-        }
     }
 }
