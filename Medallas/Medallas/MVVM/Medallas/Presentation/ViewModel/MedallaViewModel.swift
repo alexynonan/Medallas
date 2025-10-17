@@ -15,7 +15,7 @@ final class MedallaViewModel: ObservableObject {
         static let one = 1
         static let tapValueOne: Double = 1
         static let sleepSeconds: Double = 0.5
-        static let startSeconds: Double = 4
+        static let startSeconds: Double = 0.8
         static let maxTaps = 5
     }
     
@@ -115,7 +115,7 @@ final class MedallaViewModel: ObservableObject {
         tapCount += 1
         if tapCount == Constants.maxTaps {
             deleteDataFromCoreData()
-            tapCount = 0
+            tapCount = .zero
             loadTapTask?.cancel()
             loadMedallas()
         } else {
@@ -123,7 +123,7 @@ final class MedallaViewModel: ObservableObject {
             loadTapTask = Task {
                 try? await Task.sleep(seconds: Constants.tapValueOne)
                 if !Task.isCancelled && tapCount < Constants.maxTaps {
-                    tapCount = 0
+                    tapCount = .zero
                 }
             }
         }

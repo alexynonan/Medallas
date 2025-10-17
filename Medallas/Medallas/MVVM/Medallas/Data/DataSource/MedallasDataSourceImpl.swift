@@ -10,7 +10,7 @@ final class MedallasDataSourceImpl: MedallasDataSourceProtocol {
     
     private enum Constants {
         static let nameJson: String = "MedallasDataMock"
-        static let seconds: Double = 1
+        static let seconds: Double = 0.8
     }
     
     private let networkManager: WebserviceProtocol

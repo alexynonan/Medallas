@@ -12,7 +12,7 @@ struct MedallaUIView: View {
     private enum Constants {
         static let iconProfile = "ic_profile"
         static let scaleEffectValue = 1.3
-        static let widthAndHeight: CGFloat = 200
+        static let widthAndHeight: CGFloat = 100
         static let cornerRadius: CGFloat = 150
     }
     

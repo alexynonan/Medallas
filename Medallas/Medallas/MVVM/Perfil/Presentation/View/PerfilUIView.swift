@@ -18,15 +18,16 @@ struct PerfilUIView: View {
     
     var body: some View {
         VStack {
-            Spacer()
-                .frame(height: 60)
             if viewModel.isLoading {
+                Spacer()
                 ProgressView("Cargando...")
                     .progressViewStyle(CircularProgressViewStyle())
                     .padding()
                     .scaleEffect(1.3)
                 Spacer()
             } else {
+                Spacer()
+                    .frame(height: 60)
                 List($viewModel.funcionalitys, id: \.type) { $funcionality in
                     NavigationLink(
                         destination: destinationView(for: funcionality)
