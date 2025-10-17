@@ -24,6 +24,8 @@ class MedallasRepositoryImpl: MedallasRepository {
         let result = await dataSource.fetchMedallas()
         switch result {
         case .success(let data):
+            let dataLocal = dataSource.fetchMedallasLocal()
+            let finalLogic = self.mapper.dataToDomain(dataLocal, data)
             return .success(data: self.mapper.dataToDomain(data))
         case .error(let error):
             return .error(error: error)

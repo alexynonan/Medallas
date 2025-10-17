@@ -7,4 +7,5 @@
 
 protocol MedallasDataMapper {
     func dataToDomain(_ value: [ApiMedallas]?) -> [Medalla]
+    func dataToDomain(_ value: [CDMedallas]?,_ value2: [ApiMedallas]?) -> [Medalla]
 }
