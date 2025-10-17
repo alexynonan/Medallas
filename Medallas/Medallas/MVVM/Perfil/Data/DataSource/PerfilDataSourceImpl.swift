@@ -1,12 +1,12 @@
 //
-//  MedallasDataSourceImpl.swift
+//  PerfilDataSourceImpl.swift
 //  Medallas
 //
 //  Created by Alexander Ynoñan H. on 16/10/25.
 //
 
-final class MedallasDataSourceImpl: MedallasDataSourceProtocol {
-    
+final class PerfilDataSourceImpl: PerfilDataSource {
+
     private enum Constants {
         static let nameJson: String = "MedallasDataMock"
         static let seconds: Double = 1.5
@@ -17,13 +17,13 @@ final class MedallasDataSourceImpl: MedallasDataSourceProtocol {
     init(networkManager: WebserviceProtocol) {
         self.networkManager = networkManager
     }
-
-    func fetchMedallas() async -> ApiResult<[ApiMedallas]> {
+    
+    func fetchFuncionalidades() async -> ApiResult<[ApiPerfilFuncionality]> {
         try? await Task.sleep(seconds: Constants.seconds)
         
-        let result: ApiResult<[ApiMedallas]> = networkManager.loadJSON(
+        let result: ApiResult<[ApiPerfilFuncionality]> = networkManager.loadJSON(
             from: Constants.nameJson,
-            as: [ApiMedallas].self
+            as: [ApiPerfilFuncionality].self
         )
         switch result {
         case .success(let data):

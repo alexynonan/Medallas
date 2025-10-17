@@ -28,6 +28,22 @@
 		9566D7282EA13FF900C4F37F /* MedallasDataMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7272EA13FF900C4F37F /* MedallasDataMapperImpl.swift */; };
 		9566D72A2EA1573700C4F37F /* MedallaDetalleUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7292EA1573700C4F37F /* MedallaDetalleUIView.swift */; };
 		9566D72E2EA1577000C4F37F /* MedallaDetalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D72D2EA1577000C4F37F /* MedallaDetalleViewModel.swift */; };
+		9566D7302EA1813700C4F37F /* Extension+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D72F2EA1813700C4F37F /* Extension+Task.swift */; };
+		9566D7382EA19D8A00C4F37F /* PerfilUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7372EA19D8A00C4F37F /* PerfilUIView.swift */; };
+		9566D73C2EA19DEE00C4F37F /* PerfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D73B2EA19DEE00C4F37F /* PerfilViewModel.swift */; };
+		9566D7412EA19EA600C4F37F /* FetchPerfilUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7402EA19EA600C4F37F /* FetchPerfilUseCase.swift */; };
+		9566D7462EA19F5100C4F37F /* UIPerfilFuncionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7452EA19F5100C4F37F /* UIPerfilFuncionality.swift */; };
+		9566D7482EA19F8800C4F37F /* FetchPerfilUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7472EA19F8800C4F37F /* FetchPerfilUseCaseImpl.swift */; };
+		9566D74C2EA19FEC00C4F37F /* PerfilRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D74B2EA19FEC00C4F37F /* PerfilRepository.swift */; };
+		9566D74F2EA1A05B00C4F37F /* ApiPerfilFuncionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D74E2EA1A05B00C4F37F /* ApiPerfilFuncionality.swift */; };
+		9566D7512EA1A11000C4F37F /* PerfilRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7502EA1A11000C4F37F /* PerfilRepositoryImpl.swift */; };
+		9566D7532EA1A15D00C4F37F /* PerfilDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7522EA1A15D00C4F37F /* PerfilDataSource.swift */; };
+		9566D7572EA1A32100C4F37F /* PerfilFuncionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7562EA1A32100C4F37F /* PerfilFuncionality.swift */; };
+		9566D7592EA1A3B300C4F37F /* PerfilDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7582EA1A3B300C4F37F /* PerfilDomainMapper.swift */; };
+		9566D75B2EA1A3EF00C4F37F /* PerfilDomainMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D75A2EA1A3EF00C4F37F /* PerfilDomainMapperImpl.swift */; };
+		9566D75D2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D75C2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift */; };
+		9566D7602EA1A66100C4F37F /* PerfilDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D75F2EA1A66100C4F37F /* PerfilDataMapper.swift */; };
+		9566D7622EA1A67E00C4F37F /* PerfilDataMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7612EA1A67E00C4F37F /* PerfilDataMapperImpl.swift */; };
 		959DA6632EA0AB01001DD951 /* MedallaUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6622EA0AB01001DD951 /* MedallaUIView.swift */; };
 		959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */; };
 		959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */; };
@@ -61,6 +77,22 @@
 		9566D7272EA13FF900C4F37F /* MedallasDataMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDataMapperImpl.swift; sourceTree = "<group>"; };
 		9566D7292EA1573700C4F37F /* MedallaDetalleUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaDetalleUIView.swift; sourceTree = "<group>"; };
 		9566D72D2EA1577000C4F37F /* MedallaDetalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaDetalleViewModel.swift; sourceTree = "<group>"; };
+		9566D72F2EA1813700C4F37F /* Extension+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Task.swift"; sourceTree = "<group>"; };
+		9566D7372EA19D8A00C4F37F /* PerfilUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilUIView.swift; sourceTree = "<group>"; };
+		9566D73B2EA19DEE00C4F37F /* PerfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewModel.swift; sourceTree = "<group>"; };
+		9566D7402EA19EA600C4F37F /* FetchPerfilUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPerfilUseCase.swift; sourceTree = "<group>"; };
+		9566D7452EA19F5100C4F37F /* UIPerfilFuncionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPerfilFuncionality.swift; sourceTree = "<group>"; };
+		9566D7472EA19F8800C4F37F /* FetchPerfilUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPerfilUseCaseImpl.swift; sourceTree = "<group>"; };
+		9566D74B2EA19FEC00C4F37F /* PerfilRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilRepository.swift; sourceTree = "<group>"; };
+		9566D74E2EA1A05B00C4F37F /* ApiPerfilFuncionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPerfilFuncionality.swift; sourceTree = "<group>"; };
+		9566D7502EA1A11000C4F37F /* PerfilRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilRepositoryImpl.swift; sourceTree = "<group>"; };
+		9566D7522EA1A15D00C4F37F /* PerfilDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDataSource.swift; sourceTree = "<group>"; };
+		9566D7562EA1A32100C4F37F /* PerfilFuncionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilFuncionality.swift; sourceTree = "<group>"; };
+		9566D7582EA1A3B300C4F37F /* PerfilDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDomainMapper.swift; sourceTree = "<group>"; };
+		9566D75A2EA1A3EF00C4F37F /* PerfilDomainMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDomainMapperImpl.swift; sourceTree = "<group>"; };
+		9566D75C2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDataSourceImpl.swift; sourceTree = "<group>"; };
+		9566D75F2EA1A66100C4F37F /* PerfilDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDataMapper.swift; sourceTree = "<group>"; };
+		9566D7612EA1A67E00C4F37F /* PerfilDataMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDataMapperImpl.swift; sourceTree = "<group>"; };
 		959DA6622EA0AB01001DD951 /* MedallaUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaUIView.swift; sourceTree = "<group>"; };
 		959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaViewModel.swift; sourceTree = "<group>"; };
 		959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisionesUIView.swift; sourceTree = "<group>"; };
@@ -167,6 +199,7 @@
 				9566D7182EA1370E00C4F37F /* WebserviceProtocol.swift */,
 				9566D71A2EA1372100C4F37F /* WebserviceProtocolImpl.swift */,
 				9566D71C2EA1392B00C4F37F /* ApiResult.swift */,
+				9566D72F2EA1813700C4F37F /* Extension+Task.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -180,11 +213,138 @@
 			path = Mapper;
 			sourceTree = "<group>";
 		};
+		9566D7312EA19C4800C4F37F /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7322EA19C5800C4F37F /* Data */,
+				9566D7332EA19C5F00C4F37F /* Domain */,
+				9566D7342EA19C6F00C4F37F /* Presentation */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		9566D7322EA19C5800C4F37F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9566D75E2EA1A64100C4F37F /* Mapper */,
+				9566D74D2EA19FF900C4F37F /* Entity */,
+				9566D74A2EA19FD100C4F37F /* DataSource */,
+				9566D7492EA19FC100C4F37F /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9566D7332EA19C5F00C4F37F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7542EA1A2F600C4F37F /* Mapper */,
+				9566D73F2EA19E9500C4F37F /* UseCase */,
+				9566D7422EA19EC300C4F37F /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9566D7342EA19C6F00C4F37F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7552EA1A30400C4F37F /* Entity */,
+				9566D7362EA19C9900C4F37F /* ViewModel */,
+				9566D7352EA19C9200C4F37F /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9566D7352EA19C9200C4F37F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7372EA19D8A00C4F37F /* PerfilUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9566D7362EA19C9900C4F37F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9566D73B2EA19DEE00C4F37F /* PerfilViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9566D73F2EA19E9500C4F37F /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7402EA19EA600C4F37F /* FetchPerfilUseCase.swift */,
+				9566D7472EA19F8800C4F37F /* FetchPerfilUseCaseImpl.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		9566D7422EA19EC300C4F37F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7562EA1A32100C4F37F /* PerfilFuncionality.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9566D7492EA19FC100C4F37F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9566D74B2EA19FEC00C4F37F /* PerfilRepository.swift */,
+				9566D7502EA1A11000C4F37F /* PerfilRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9566D74A2EA19FD100C4F37F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7522EA1A15D00C4F37F /* PerfilDataSource.swift */,
+				9566D75C2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		9566D74D2EA19FF900C4F37F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9566D74E2EA1A05B00C4F37F /* ApiPerfilFuncionality.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9566D7542EA1A2F600C4F37F /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7582EA1A3B300C4F37F /* PerfilDomainMapper.swift */,
+				9566D75A2EA1A3EF00C4F37F /* PerfilDomainMapperImpl.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		9566D7552EA1A30400C4F37F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7452EA19F5100C4F37F /* UIPerfilFuncionality.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9566D75E2EA1A64100C4F37F /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9566D75F2EA1A66100C4F37F /* PerfilDataMapper.swift */,
+				9566D7612EA1A67E00C4F37F /* PerfilDataMapperImpl.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 		959DA6572EA0A6AB001DD951 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				9566D7172EA136F700C4F37F /* Network */,
 				9566D7112EA1316400C4F37F /* Mock */,
+				9566D7312EA19C4800C4F37F /* Perfil */,
 				959DA6582EA0A6D6001DD951 /* Medallas */,
 				959DA6592EA0A6EC001DD951 /* Misiones */,
 				959DA65A2EA0A6F4001DD951 /* Rachas */,
@@ -433,33 +593,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9566D75B2EA1A3EF00C4F37F /* PerfilDomainMapperImpl.swift in Sources */,
 				959DA67A2EA0ADA6001DD951 /* AlbumViewModel.swift in Sources */,
 				9566D6F52EA0D29F00C4F37F /* FetchMedallasUseCaseImpl.swift in Sources */,
 				950A0ABD2EA09C8000F4785D /* ContentView.swift in Sources */,
+				9566D74C2EA19FEC00C4F37F /* PerfilRepository.swift in Sources */,
+				9566D7572EA1A32100C4F37F /* PerfilFuncionality.swift in Sources */,
+				9566D74F2EA1A05B00C4F37F /* ApiPerfilFuncionality.swift in Sources */,
 				959DA6632EA0AB01001DD951 /* MedallaUIView.swift in Sources */,
 				9566D7232EA13C7F00C4F37F /* MedallasDataSourceProtocol.swift in Sources */,
 				950A0ABE2EA09C8000F4785D /* Medallas.xcdatamodeld in Sources */,
 				950A0ABF2EA09C8000F4785D /* MedallasApp.swift in Sources */,
 				9566D70D2EA1305F00C4F37F /* MedallasRepository.swift in Sources */,
+				9566D73C2EA19DEE00C4F37F /* PerfilViewModel.swift in Sources */,
 				9566D71D2EA1392B00C4F37F /* ApiResult.swift in Sources */,
+				9566D7462EA19F5100C4F37F /* UIPerfilFuncionality.swift in Sources */,
 				950A0AC02EA09C8000F4785D /* Persistence.swift in Sources */,
+				9566D7302EA1813700C4F37F /* Extension+Task.swift in Sources */,
 				9566D72E2EA1577000C4F37F /* MedallaDetalleViewModel.swift in Sources */,
 				9566D71B2EA1372100C4F37F /* WebserviceProtocolImpl.swift in Sources */,
+				9566D7512EA1A11000C4F37F /* PerfilRepositoryImpl.swift in Sources */,
+				9566D7622EA1A67E00C4F37F /* PerfilDataMapperImpl.swift in Sources */,
 				9566D7282EA13FF900C4F37F /* MedallasDataMapperImpl.swift in Sources */,
 				959DA66C2EA0AC4F001DD951 /* MisionesViewModel.swift in Sources */,
 				959DA6732EA0ACEF001DD951 /* RachasViewModel.swift in Sources */,
 				959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */,
+				9566D75D2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift in Sources */,
 				9566D6F32EA0D21500C4F37F /* FetchMedallasUseCase.swift in Sources */,
 				9566D7192EA1370E00C4F37F /* WebserviceProtocol.swift in Sources */,
+				9566D7482EA19F8800C4F37F /* FetchPerfilUseCaseImpl.swift in Sources */,
+				9566D7382EA19D8A00C4F37F /* PerfilUIView.swift in Sources */,
 				9566D72A2EA1573700C4F37F /* MedallaDetalleUIView.swift in Sources */,
 				9566D7092EA12F2900C4F37F /* UIMedalla.swift in Sources */,
 				959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */,
 				959DA6782EA0AD98001DD951 /* AlbumUIView.swift in Sources */,
 				9566D7102EA1315200C4F37F /* ApiMedallas.swift in Sources */,
+				9566D7412EA19EA600C4F37F /* FetchPerfilUseCase.swift in Sources */,
 				9566D7212EA13C5D00C4F37F /* MedallasDataSourceImpl.swift in Sources */,
+				9566D7602EA1A66100C4F37F /* PerfilDataMapper.swift in Sources */,
 				9566D7262EA13FC200C4F37F /* MedallasDataMapper.swift in Sources */,
 				9566D71F2EA139F000C4F37F /* MedallasRepositoryImpl.swift in Sources */,
+				9566D7532EA1A15D00C4F37F /* PerfilDataSource.swift in Sources */,
 				959DA6712EA0ACE2001DD951 /* RachasUIView.swift in Sources */,
+				9566D7592EA1A3B300C4F37F /* PerfilDomainMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

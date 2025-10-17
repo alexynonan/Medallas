@@ -20,14 +20,13 @@ class MedallasRepositoryImpl: MedallasRepository {
         self.mapper = mapper
     }
     
-    func fetchMedallas(completion: @escaping (ApiResult<[UIMedalla]>) -> Void) {
-        dataSource.fetchMedallas { result in
-            switch result {
-            case .success(let data):
-                completion(.success(data: self.mapper.dataToDomain(data)))
-            case .error(let error):
-                completion(.error(error: error))
-            }
+    func fetchMedallas() async -> ApiResult<[UIMedalla]> {
+        let result = await dataSource.fetchMedallas()
+        switch result {
+        case .success(let data):
+            return .success(data: self.mapper.dataToDomain(data))
+        case .error(let error):
+            return .error(error: error)
         }
     }
 }
