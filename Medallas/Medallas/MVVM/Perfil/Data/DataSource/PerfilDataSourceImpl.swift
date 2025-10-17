@@ -8,8 +8,8 @@
 final class PerfilDataSourceImpl: PerfilDataSource {
 
     private enum Constants {
-        static let nameJson: String = "MedallasDataMock"
-        static let seconds: Double = 1.5
+        static let nameJson: String = "PerfilFuncionalityDataMock"
+        static let seconds: Double = 1
     }
     
     private let networkManager: WebserviceProtocol

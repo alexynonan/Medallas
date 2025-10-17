@@ -26,8 +26,6 @@
 		9566D7232EA13C7F00C4F37F /* MedallasDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7222EA13C7F00C4F37F /* MedallasDataSourceProtocol.swift */; };
 		9566D7262EA13FC200C4F37F /* MedallasDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7252EA13FC200C4F37F /* MedallasDataMapper.swift */; };
 		9566D7282EA13FF900C4F37F /* MedallasDataMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7272EA13FF900C4F37F /* MedallasDataMapperImpl.swift */; };
-		9566D72A2EA1573700C4F37F /* MedallaDetalleUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7292EA1573700C4F37F /* MedallaDetalleUIView.swift */; };
-		9566D72E2EA1577000C4F37F /* MedallaDetalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D72D2EA1577000C4F37F /* MedallaDetalleViewModel.swift */; };
 		9566D7302EA1813700C4F37F /* Extension+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D72F2EA1813700C4F37F /* Extension+Task.swift */; };
 		9566D7382EA19D8A00C4F37F /* PerfilUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7372EA19D8A00C4F37F /* PerfilUIView.swift */; };
 		9566D73C2EA19DEE00C4F37F /* PerfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D73B2EA19DEE00C4F37F /* PerfilViewModel.swift */; };
@@ -44,6 +42,11 @@
 		9566D75D2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D75C2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift */; };
 		9566D7602EA1A66100C4F37F /* PerfilDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D75F2EA1A66100C4F37F /* PerfilDataMapper.swift */; };
 		9566D7622EA1A67E00C4F37F /* PerfilDataMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7612EA1A67E00C4F37F /* PerfilDataMapperImpl.swift */; };
+		9566D7652EA1C12B00C4F37F /* Medalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7642EA1C12B00C4F37F /* Medalla.swift */; };
+		9566D7682EA1C4EB00C4F37F /* MedallasDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7672EA1C4EB00C4F37F /* MedallasDomainMapper.swift */; };
+		9566D76A2EA1C4F700C4F37F /* MedallasDomainMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D7692EA1C4F700C4F37F /* MedallasDomainMapperImpl.swift */; };
+		9566D76E2EA1DB9700C4F37F /* PerfilFuncionalityDataMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 9566D76D2EA1DB9700C4F37F /* PerfilFuncionalityDataMock.json */; };
+		9566D7702EA2A5B200C4F37F /* ConfettiUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566D76F2EA2A5B200C4F37F /* ConfettiUIView.swift */; };
 		959DA6632EA0AB01001DD951 /* MedallaUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6622EA0AB01001DD951 /* MedallaUIView.swift */; };
 		959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */; };
 		959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */; };
@@ -75,8 +78,6 @@
 		9566D7222EA13C7F00C4F37F /* MedallasDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDataSourceProtocol.swift; sourceTree = "<group>"; };
 		9566D7252EA13FC200C4F37F /* MedallasDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDataMapper.swift; sourceTree = "<group>"; };
 		9566D7272EA13FF900C4F37F /* MedallasDataMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDataMapperImpl.swift; sourceTree = "<group>"; };
-		9566D7292EA1573700C4F37F /* MedallaDetalleUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaDetalleUIView.swift; sourceTree = "<group>"; };
-		9566D72D2EA1577000C4F37F /* MedallaDetalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaDetalleViewModel.swift; sourceTree = "<group>"; };
 		9566D72F2EA1813700C4F37F /* Extension+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Task.swift"; sourceTree = "<group>"; };
 		9566D7372EA19D8A00C4F37F /* PerfilUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilUIView.swift; sourceTree = "<group>"; };
 		9566D73B2EA19DEE00C4F37F /* PerfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewModel.swift; sourceTree = "<group>"; };
@@ -93,6 +94,11 @@
 		9566D75C2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDataSourceImpl.swift; sourceTree = "<group>"; };
 		9566D75F2EA1A66100C4F37F /* PerfilDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDataMapper.swift; sourceTree = "<group>"; };
 		9566D7612EA1A67E00C4F37F /* PerfilDataMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilDataMapperImpl.swift; sourceTree = "<group>"; };
+		9566D7642EA1C12B00C4F37F /* Medalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medalla.swift; sourceTree = "<group>"; };
+		9566D7672EA1C4EB00C4F37F /* MedallasDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDomainMapper.swift; sourceTree = "<group>"; };
+		9566D7692EA1C4F700C4F37F /* MedallasDomainMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallasDomainMapperImpl.swift; sourceTree = "<group>"; };
+		9566D76D2EA1DB9700C4F37F /* PerfilFuncionalityDataMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PerfilFuncionalityDataMock.json; sourceTree = "<group>"; };
+		9566D76F2EA2A5B200C4F37F /* ConfettiUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiUIView.swift; sourceTree = "<group>"; };
 		959DA6622EA0AB01001DD951 /* MedallaUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaUIView.swift; sourceTree = "<group>"; };
 		959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedallaViewModel.swift; sourceTree = "<group>"; };
 		959DA6692EA0AC2A001DD951 /* MisionesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisionesUIView.swift; sourceTree = "<group>"; };
@@ -146,7 +152,7 @@
 		9566D7072EA12EEA00C4F37F /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				9566D7082EA12F2900C4F37F /* UIMedalla.swift */,
+				9566D7642EA1C12B00C4F37F /* Medalla.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				9566D7152EA1322000C4F37F /* MedallasDataMock.json */,
+				9566D76D2EA1DB9700C4F37F /* PerfilFuncionalityDataMock.json */,
 			);
 			path = Medallas;
 			sourceTree = "<group>";
@@ -339,6 +346,23 @@
 			path = Mapper;
 			sourceTree = "<group>";
 		};
+		9566D7632EA1BFDF00C4F37F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7082EA12F2900C4F37F /* UIMedalla.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9566D7662EA1C45700C4F37F /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9566D7672EA1C4EB00C4F37F /* MedallasDomainMapper.swift */,
+				9566D7692EA1C4F700C4F37F /* MedallasDomainMapperImpl.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 		959DA6572EA0A6AB001DD951 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +414,7 @@
 		959DA65C2EA0A7D5001DD951 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9566D7632EA1BFDF00C4F37F /* Entity */,
 				959DA65F2EA0AAC7001DD951 /* ViewModel */,
 				959DA6602EA0AAD5001DD951 /* View */,
 			);
@@ -410,6 +435,7 @@
 		959DA65E2EA0AAA6001DD951 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				9566D7662EA1C45700C4F37F /* Mapper */,
 				959DA67B2EA0AE51001DD951 /* UseCase */,
 				9566D7072EA12EEA00C4F37F /* Entity */,
 			);
@@ -420,7 +446,6 @@
 			isa = PBXGroup;
 			children = (
 				959DA6642EA0AB13001DD951 /* MedallaViewModel.swift */,
-				9566D72D2EA1577000C4F37F /* MedallaDetalleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -429,7 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				959DA6622EA0AB01001DD951 /* MedallaUIView.swift */,
-				9566D7292EA1573700C4F37F /* MedallaDetalleUIView.swift */,
+				9566D76F2EA2A5B200C4F37F /* ConfettiUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -581,6 +606,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9566D76E2EA1DB9700C4F37F /* PerfilFuncionalityDataMock.json in Resources */,
 				9566D7162EA1322000C4F37F /* MedallasDataMock.json in Resources */,
 				950A0ABC2EA09C8000F4785D /* Assets.xcassets in Resources */,
 			);
@@ -593,6 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9566D7652EA1C12B00C4F37F /* Medalla.swift in Sources */,
 				9566D75B2EA1A3EF00C4F37F /* PerfilDomainMapperImpl.swift in Sources */,
 				959DA67A2EA0ADA6001DD951 /* AlbumViewModel.swift in Sources */,
 				9566D6F52EA0D29F00C4F37F /* FetchMedallasUseCaseImpl.swift in Sources */,
@@ -610,20 +637,21 @@
 				9566D7462EA19F5100C4F37F /* UIPerfilFuncionality.swift in Sources */,
 				950A0AC02EA09C8000F4785D /* Persistence.swift in Sources */,
 				9566D7302EA1813700C4F37F /* Extension+Task.swift in Sources */,
-				9566D72E2EA1577000C4F37F /* MedallaDetalleViewModel.swift in Sources */,
 				9566D71B2EA1372100C4F37F /* WebserviceProtocolImpl.swift in Sources */,
 				9566D7512EA1A11000C4F37F /* PerfilRepositoryImpl.swift in Sources */,
 				9566D7622EA1A67E00C4F37F /* PerfilDataMapperImpl.swift in Sources */,
 				9566D7282EA13FF900C4F37F /* MedallasDataMapperImpl.swift in Sources */,
 				959DA66C2EA0AC4F001DD951 /* MisionesViewModel.swift in Sources */,
 				959DA6732EA0ACEF001DD951 /* RachasViewModel.swift in Sources */,
+				9566D76A2EA1C4F700C4F37F /* MedallasDomainMapperImpl.swift in Sources */,
 				959DA6652EA0AB13001DD951 /* MedallaViewModel.swift in Sources */,
 				9566D75D2EA1A5A500C4F37F /* PerfilDataSourceImpl.swift in Sources */,
+				9566D7682EA1C4EB00C4F37F /* MedallasDomainMapper.swift in Sources */,
 				9566D6F32EA0D21500C4F37F /* FetchMedallasUseCase.swift in Sources */,
 				9566D7192EA1370E00C4F37F /* WebserviceProtocol.swift in Sources */,
+				9566D7702EA2A5B200C4F37F /* ConfettiUIView.swift in Sources */,
 				9566D7482EA19F8800C4F37F /* FetchPerfilUseCaseImpl.swift in Sources */,
 				9566D7382EA19D8A00C4F37F /* PerfilUIView.swift in Sources */,
-				9566D72A2EA1573700C4F37F /* MedallaDetalleUIView.swift in Sources */,
 				9566D7092EA12F2900C4F37F /* UIMedalla.swift in Sources */,
 				959DA66A2EA0AC2A001DD951 /* MisionesUIView.swift in Sources */,
 				959DA6782EA0AD98001DD951 /* AlbumUIView.swift in Sources */,

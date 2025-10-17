@@ -36,7 +36,11 @@ struct MedallasApp: App {
                             dataSource: dataSource,
                             mapper: mapper
                         )
-                        let useCase = FetchMedallasUseCaseImpl(repository: repository)
+                        let mapperDomain = MedallasDomainMapperImpl()
+                        let useCase = FetchMedallasUseCaseImpl(
+                            repository: repository,
+                            mapper: mapperDomain
+                        )
                         let viewModel = MedallaViewModel(fetchMedallasUseCase: useCase)
                         return viewModel
                     },

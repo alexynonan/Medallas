@@ -6,5 +6,5 @@
 //
 
 protocol MedallasDataMapper {
-    func dataToDomain(_ value: [ApiMedallas]?) -> [UIMedalla]
+    func dataToDomain(_ value: [ApiMedallas]?) -> [Medalla]
 }

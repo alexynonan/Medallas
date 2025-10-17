@@ -6,5 +6,5 @@
 //
 
 protocol MedallasRepository {
-    func fetchMedallas() async -> ApiResult<[UIMedalla]>
+    func fetchMedallas() async -> ApiResult<[Medalla]>
 }

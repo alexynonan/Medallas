@@ -1,11 +1,11 @@
 //
-//  ApiMedallas.swift
+//  Medalla.swift
 //  Medallas
 //
 //  Created by Alexander Ynoñan H. on 16/10/25.
 //
 
-struct ApiMedallas: Decodable {
+struct Medalla {
     let id: String
     let name: String
     let description: String
