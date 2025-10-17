@@ -1,15 +1,15 @@
 //
-//  MedallasDataMapperImpl.swift
+//  MedallasDomainMapperImpl.swift
 //  Medallas
 //
 //  Created by Alexander Ynoñan H. on 16/10/25.
 //
 
-final class MedallasDataMapperImpl: MedallasDataMapper {
+final class MedallasDomainMapperImpl: MedallasDomainMapper {
     
-    func dataToDomain(_ value: [ApiMedallas]?) -> [Medalla] {
+    func domainToPresentation(_ value: [Medalla]?) -> [UIMedalla] {
         value?.map {
-            Medalla(
+            UIMedalla(
                 id: $0.id,
                 name: $0.name,
                 description: $0.description,
@@ -25,7 +25,8 @@ final class MedallasDataMapperImpl: MedallasDataMapper {
                 unlockedAt: $0.reward,
                 nextLevelGoal: $0.nextLevelGoal,
                 isLocked: $0.isLocked,
-                animationType: $0.animationType
+                animationType: $0.animationType,
+                showSuccessUpLevel: false
             )
         } ?? []
     }

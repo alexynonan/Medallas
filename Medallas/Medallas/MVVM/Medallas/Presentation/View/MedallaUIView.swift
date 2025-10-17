@@ -17,38 +17,52 @@ struct MedallaUIView: View {
     
     var body: some View {
         VStack {
-            Spacer()
-                .frame(height: 60)
-            Image(Constants.iconProfile)
-                .resizable()
-                .frame(
-                    width: 300,
-                    height: 300
-                )
-                .clipped()
-                .cornerRadius(150)
             if viewModel.isLoading {
+                Spacer()
                 ProgressView("Cargando...")
                     .progressViewStyle(CircularProgressViewStyle())
                     .padding()
                     .scaleEffect(1.3)
                 Spacer()
             } else {
-//                List($viewModel.medallas, id: \.typeMedalla) { $medalla in
-//                    NavigationLink(
-//                        destination: destinationView(for: medalla)
-//                    ) {
-//                        HStack {
-//                            Text(medalla.nameComplet())
-//                                .font(.title)
-//                        }
-//                    }
-//                }
-//                .listStyle(.insetGrouped)
+                List($viewModel.medallas, id: \.id) { $medalla in
+                    MedallaRowView(medalla: $medalla)
+                }
             }
         }
-        .ignoresSafeArea(edges: .top)
         .onDisappear { viewModel.cancelTask() }
         .onAppear { viewModel.loadMedallas() }
+    }
+}
+
+struct MedallaRowView: View {
+    @Binding var medalla: UIMedalla
+    
+    var body: some View {
+        ZStack {
+            HStack(spacing: 16) {
+                Image(medalla.showIconSuccessfulMedal())
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .shadow(radius: 3)
+                
+                VStack(alignment: .leading) {
+                    Text(medalla.name)
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    Text("\(medalla.points)/100 puntos")
+                        .font(.title)
+                        .foregroundColor(.black)
+                }
+                Spacer()
+                Text("\(medalla.level) Nv.")
+                    .font(.headline)
+            }
+            .padding(.vertical, 8)
+            if medalla.mostrarAnimacionConfenti() {
+                ConfettiUIView()
+            }
+        }
     }
 }

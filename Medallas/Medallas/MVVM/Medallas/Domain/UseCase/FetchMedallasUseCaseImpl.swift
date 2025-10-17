@@ -8,12 +8,23 @@
 class FetchMedallasUseCaseImpl: FetchMedallasUseCase {
     
     let repository: MedallasRepository
+    let mapper: MedallasDomainMapper
     
-    init(repository: MedallasRepository) {
+    init(
+        repository: MedallasRepository,
+        mapper: MedallasDomainMapper
+    ) {
         self.repository = repository
+        self.mapper = mapper
     }
     
     func fetchMedallas() async -> ApiResult<[UIMedalla]> {
-        await repository.fetchMedallas()
+        let result = await repository.fetchMedallas()
+        switch result {
+        case .success(let data):
+            return .success(data: self.mapper.domainToPresentation(data))
+        case .error(let error):
+            return .error(error: error)
+        }
     }
 }

@@ -20,7 +20,7 @@ class MedallasRepositoryImpl: MedallasRepository {
         self.mapper = mapper
     }
     
-    func fetchMedallas() async -> ApiResult<[UIMedalla]> {
+    func fetchMedallas() async -> ApiResult<[Medalla]> {
         let result = await dataSource.fetchMedallas()
         switch result {
         case .success(let data):

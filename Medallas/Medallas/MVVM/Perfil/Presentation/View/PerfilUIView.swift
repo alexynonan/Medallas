@@ -34,12 +34,12 @@ struct PerfilUIView: View {
                     .scaleEffect(1.3)
                 Spacer()
             } else {
-                List($viewModel.funcionalitys, id: \.type) { $medalla in
+                List($viewModel.funcionalitys, id: \.type) { $funcionality in
                     NavigationLink(
-                        destination: destinationView(for: medalla)
+                        destination: destinationView(for: funcionality)
                     ) {
                         HStack {
-                            Text(medalla.nameComplet())
+                            Text(funcionality.nameComplet())
                                 .font(.title)
                         }
                     }
@@ -52,10 +52,11 @@ struct PerfilUIView: View {
         .onAppear { viewModel.loadMedallas() }
     }
     @ViewBuilder
-    private func destinationView(for medalla: UIPerfilFuncionality) -> some View {
-        switch medalla.type {
+    private func destinationView(for funcionality: UIPerfilFuncionality) -> some View {
+        switch funcionality.type {
         case 1:
             MedallaUIView(viewModel: viewModel.redirectionMedallaDetalle())
+                .navigationTitle(funcionality.nameComplet())
         case 2:
             MisionesUIView(viewModel: viewModel.redirectionMisiones())
         case 3:
