@@ -49,7 +49,7 @@ final class MedallasDataSourceImpl: MedallasDataSourceProtocol {
                 existing.level = Int64(medalla.level)
             } else {
                 let new = MedallaEntity(context: context)
-                new.id = UUID(uuidString: medalla.id)
+                new.id = medalla.id
                 new.points = Int64(medalla.points)
                 new.level = Int64(medalla.level)
             }
@@ -64,7 +64,7 @@ final class MedallasDataSourceImpl: MedallasDataSourceProtocol {
         
         return results.map {
             CDMedallas(
-                id: $0.id?.uuidString ?? UUID().uuidString,
+                id: $0.id ?? String(),
                 points: Int($0.points),
                 level: Int($0.level)
             )
@@ -73,7 +73,11 @@ final class MedallasDataSourceImpl: MedallasDataSourceProtocol {
     func deleteAllMedallasLocal() {
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = MedallaEntity.fetchRequest()
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-        try? context.execute(deleteRequest)
-        try? context.save()
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        } catch {
+            print("Error al eliminar todas las medallas: \\(error)")
+        }
     }
 }

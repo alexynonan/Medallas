@@ -10,7 +10,7 @@
     "progressColor": "#2196F3",
     "level": 1,
     "points": 45,
-    "maxLevel": 2,
+    "maxLevel": 5,
     "reward": "10 monedas",
     "unlockedAt": "Registro completado",
     "nextLevelGoal": "Suma 55 puntos más para alcanzar el siguiente nivel.",

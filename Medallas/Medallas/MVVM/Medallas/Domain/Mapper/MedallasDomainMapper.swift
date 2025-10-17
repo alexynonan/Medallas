@@ -7,4 +7,5 @@
 
 protocol MedallasDomainMapper {
     func domainToPresentation(_ value: [Medalla]?) -> [UIMedalla]
+    func presentationToDomain(_ value: [UIMedalla]?) -> [Medalla]
 }

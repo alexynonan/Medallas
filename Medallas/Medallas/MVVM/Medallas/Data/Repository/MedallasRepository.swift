@@ -7,4 +7,6 @@
 
 protocol MedallasRepository {
     func fetchMedallas() async -> ApiResult<[Medalla]>
+    func saveMedallas(list: [Medalla])
+    func deleteMedallas()
 }
