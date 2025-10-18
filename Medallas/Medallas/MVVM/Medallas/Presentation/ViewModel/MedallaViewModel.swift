@@ -98,16 +98,24 @@ final class MedallaViewModel: ObservableObject {
         guard medallas[index].level < medallas[index].maxLevel else { return }
         
         let incremento = Int.random(in: 0...Constants.maxPuntos)
+        let puntaje = medallas[index].points
         
-        if incremento == Constants.maxPuntos {
+        if puntaje >= Constants.maxPuntos {
             medallas[index].level += Constants.one
-            medallas[index].points = incremento
             medallas[index].showSuccessUpLevel = true
-            try? await Task.sleep(seconds: Constants.sleepSeconds)
             medallas[index].points = .zero
         } else {
+//            Esta seria la validacion si queremos que alcance un puntaje en especifico
+//            para que la suma sea igual a 100 puntos
+//            
+//            if puntajeTemporal > Constants.maxPuntos {
+//                return
+//            } else {
+//                medallas[index].points += incremento
+//            }
+            
             medallas[index].showSuccessUpLevel = false
-            medallas[index].points = incremento
+            medallas[index].points += incremento
         }
     }
     
